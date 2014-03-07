@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+	<RelativeLayout 
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".MainActivity" >
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/SESNTextBox"
+	        android:layout_below="@+id/SESNTextBox"
+	        android:text="Security Number" />
+	
+	    <EditText
+	        android:id="@+id/SESNTextBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:ems="10"
+	        android:maxLength="3"
+	        android:inputType="number" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/AmountTextBox"
+	        android:layout_below="@+id/AmountTextBox"
+	        android:text="Amount" />
+	
+	    <TextView
+	        android:id="@+id/LATStextview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/AmountTextBox"
+	        android:layout_below="@+id/ACCNtextview"
+	        android:text="Small Text"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <Button
+	        android:id="@+id/CancelButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/ProceedButton"
+	        android:layout_alignLeft="@+id/textView2"
+	        android:text="Cancel" />
+	
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/KeyTextBox"
+	        android:layout_below="@+id/KeyTextBox"
+	        android:text="Key" />
+	
+	    <TextView
+	        android:id="@+id/IVtextview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/LATStextview"
+	        android:layout_below="@+id/LATStextview"
+	        android:text="Small Text"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <TextView
+	        android:id="@+id/DebugTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ProceedButton"
+	        android:text="TextView" />
+	
+	    <EditText
+	        android:id="@+id/AmountTextBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:ems="10"
+	        android:inputType="number"
+	        android:maxLength="7" />
+	
+	    <EditText
+	        android:id="@+id/KeyTextBox"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/textView2"
+	        android:layout_below="@+id/textView2"
+	        android:digits="0123456789ABCDEF"
+	        android:ems="10"
+	        android:inputType="textCapCharacters"
+	        android:maxLength="64" />
+	
+	    <TextView
+	        android:id="@+id/ACCNtextview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/LATStextview"
+	        android:layout_below="@+id/textView3"
+	        android:layout_marginTop="18dp"
+	        android:text="Small Text"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <Button
+	        android:id="@+id/ProceedButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/IVtextview"
+	        android:layout_below="@+id/IVtextview"
+	        android:layout_marginLeft="36dp"
+	        android:text="Proceed" />
+	
+	</RelativeLayout>
+</ScrollView>
